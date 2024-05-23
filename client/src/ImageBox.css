@@ -1,0 +1,22 @@
+.image-box {
+    width: 50%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    border-radius: 15px; /* Rounded corners */
+    object-fit: contain; /* Ensure the image fits within the box */
+    margin: 20px auto; /* Space between image boxes and center align */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for any transformations */
+    display: block; /* Block level element */
+}
+
+.image-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the image box on hover */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .image-box {
+        width: 100%; /* Take up the full width on small screens */
+        margin: 50vh auto; /* Increase the vertical margin */
+    }
+}
